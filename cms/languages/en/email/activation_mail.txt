@@ -1,18 +1,85 @@
+
+<html><head>
+    <title>Pragyan 2019</title>
+  </head>
+  <body>
+    <style type="text/css">
+           ul li
+           {
+        padding-top: 10px;
+            }
+    </style>
+    <div style="margin:0;padding:0">
+      <table border="0" cellpadding="0" cellspacing="0" width="100%">
+      <tbody><tr>
+          <td bgcolor="#D8F1FF" align="center" style="padding:70px 15px 70px 15px" class="m_615698076909036705section-padding">
+            <table border="0" cellpadding="0" cellspacing="0" width="500" class="m_615698076909036705responsive-table">
+               <tbody><tr>
+                <td>
+                      <table width="100%" border="0" cellspacing="0" cellpadding="0">
+                                      <tbody><tr>
+                                        <td>
+
+                                                  <table width="100%" border="0" cellspacing="0" cellpadding="0">
+                                                                         <tbody><tr>
+                                                                        </tr></tbody></table><table border="0" cellpadding="0" cellspacing="0" width="100%">
+      <tbody><tr>
+        <td align="center" width="100%" style="padding:20px 15px 20px 15px" class="m_-875870575451124868section-header">
+
+       
+         </td>
+         </tr>
+    </tbody></table>
+              </td></tr>
+                          <tr>
+                                        <td align="justify" style="padding:20px 0 0 0;font-size:16px;line-height:25px;font-family:Helvetica,Arial,sans-serif;color:#666666" class="m_615698076909036705padding-copy">
 Subject: {WEBSITE} Registration
-Dear  {NAME},
-Thank you for registering on {WEBSITE} ({DOMAIN}).
-Please use the following link to activate your account and get started.
+                      <p>Dear  {NAME},</p>
+<p>Thank you for registering at Pragyan 2019.</p>
+<p>Please use the following link to activate your account and get started.</p>
+<p>{ACTIVATE_URL}</p>
+<p>Regards,<br>
+Administrator<br>
+Pragyan 2019.<br>
+--------------------------------------------------------------------------<br>
+This is an auto-generated email. Please do not reply to it as this email address is not monitored. This mail was sent because you or someone registered on {DOMAIN} with this mail id. Please ignore the mail otherwise.<br>
 
-{ACTIVATE_URL}
+</p>
 
-(Copy and paste the given link in your browser window if required)
+                    </td>
+                              </tr>
+                                          </tbody></table>
+                                                </td>
+                                                      </tr>
+                                                              </tbody></table>
+                                                                </td>
+                                                                   </tr>
+                                                                         </tbody></table>
+                                                                         
+                                                                       
+      
+      
+      <table border="0" cellpadding="0" cellspacing="0" width="100%">
+      <tbody><tr>
+          <td bgcolor="#ffffff" align="center">
+            <table border="0" cellspacing="0" cellpadding="0" width="100%" align="center">
+               <tbody><tr>
+                <td style="padding:20px 0px" align="center">
 
-Regards,
-Administrator
-{WEBSITE} ({DOMAIN})
+                          <table width="500" border="0" cellspacing="0" cellpadding="0" align="center" class="m_615698076909036705responsive-table">
+                                     <tbody><tr>
+                                        <td align="center" class="m_615698076909036705padding-copy" style="font-size:12px;line-height:18px;font-family:Helvetica,Arial,sans-serif;color:#666666">
+                                                             <span class="m_615698076909036705appleFooter" style="color:#666666"><a href="https://pragyan.org" target="_blank">Pragyan</a>, NIT Trichy, Tamil Nadu</span><br>
+                                                                                   </td>
+                                                                                   </tr>
+                                                                                      </tbody></table>
+                                                                                       </td>
+                                                                                          </tr>
+                                                                                            </tbody></table>
+                                                                                            </td>
+                                                                                              </tr>
+      </tbody></table>
+  
+  
+</div></body></html>
 
---------------------------------------------------------------------------
-This is an auto-generated email. Please do not reply to it as this email
-address is not monitored.
-This mail was sent because you or someone registered on {DOMAIN} 
-with this mail id. Please ignore the mail otherwise.

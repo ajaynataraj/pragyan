@@ -20,6 +20,7 @@ if(!defined('__PRAGYAN_CMS'))
 
 global $sourceFolder,$moduleFolder;
 
+require 'vendor/autoload.php';
 require_once("smarttable.class.php");
 
 /** To connect to the database*/
@@ -743,8 +744,32 @@ class messenger {
 					displayinfo("Mail sent to $to from $from with subject $subject and body $body");
 					
 				}
-				return mail($to, $subject, $body, $from);
-			}
+                        $mtemp=array();
+            foreach($this->vars as $mvar => $mval){
+                $mtemp[] = array(
+                    'name' => $mvar,
+                        'content' => $mval
+                );
+            }
+
+            $email = new \SendGrid\Mail\Mail(); 
+            $email->setFrom(CMS_EMAIL, CMS_TITLE);
+            $email->setSubject($subject);
+            $email->addTo($to, null);
+            $email->addContent("text/html", $body);
+            $sendgrid = new SendGrid('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');
+            
+            try {
+                $response = $sendgrid->send($email); 
+            } catch(\SendGrid\Exception $e) {
+                echo $e->getCode();
+                foreach($e->getErrors() as $er) {
+                    displayerror("Mailer error:".$er);
+                }
+            }
+            return true;
+                //return mail($to, $subject, $body, $from); 
+        }
 				
 	}
 

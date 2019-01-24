@@ -3,6 +3,7 @@ INSTALL-*
 cms/config.inc.php
 cms/modules/search/settings/database.php
 cms/uploads/
+cms/vendor/
 *~
 .project
 .settings
