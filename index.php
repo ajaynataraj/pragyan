@@ -276,7 +276,16 @@ if(isset($_GET['fileget'])) {
 $permission = getPermissions($userId, $pageId, $action);
 
 ///Gets the page-specific template for that requested page
-define("TEMPLATE", getPageTemplate($pageId));
+if($action == "edit" || $action == "admin" || $action == "settings" || $action == "grant" || $action == "search" || $action == "viewregistrants" || $action == "editregistrants" || $action == "correct" || $action == "ochead" || $action == "octeam" || $action == "editform" || $action == "widgets" || $action == 'qa' || $action == "qahead")
+{
+        define("TEMPLATE", "integriti");
+
+}
+else if(($action == "login" && $userId == 0) || $action == "profile"){
+        define("TEMPLATE", "pragyan19inner");
+
+}
+else define("TEMPLATE", getPageTemplate($pageId));
 
 ///Gets the page title of the requested page
 if (getTitle($pageId, $action, $TITLE))
