@@ -15,7 +15,8 @@ if(!defined('__PRAGYAN_CMS'))
         <link rel="icon" href="<?php echo $TEMPLATEBROWSERPATH; ?>/../common/site/images/favicon.ico" >
 		<meta name="description" content="<?php echo $SITEDESCRIPTION ?>" />
 		<meta name="keywords" content="<?php echo $SITEKEYWORDS.', '.$PAGEKEYWORDS ?>" />
-		<?php global $urlRequestRoot;	global $PAGELASTUPDATED;
+        <meta name="google" content="notranslate">
+        <?php global $urlRequestRoot;	global $PAGELASTUPDATED;
 		if($PAGELASTUPDATED!="")
 		echo '<meta http-equiv="Last-Update" content="'.substr($PAGELASTUPDATED,0,10).'" />'."\n";
 		?>

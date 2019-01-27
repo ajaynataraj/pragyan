@@ -15,7 +15,8 @@ if(!defined('__PRAGYAN_CMS'))
         <link rel="icon" href="<?php echo $TEMPLATEBROWSERPATH; ?>/../common/site/images/favicon.ico" >
 		<meta name="description" content="<?php echo $SITEDESCRIPTION ?>" />
 		<meta name="keywords" content="<?php echo $SITEKEYWORDS.', '.$PAGEKEYWORDS ?>" />
-		<?php global $urlRequestRoot;	global $PAGELASTUPDATED;
+        <meta name="google" content="notranslate">
+        <?php global $urlRequestRoot;	global $PAGELASTUPDATED;
 		if($PAGELASTUPDATED!="")
 		echo '<meta http-equiv="Last-Update" content="'.substr($PAGELASTUPDATED,0,10).'" />'."\n";
 		?>
@@ -224,12 +225,12 @@ LOGIN;
                                 <p class="clustertitle">BYTEHOC</p>
                                 <table style="margin:auto;">
                                 <tr style="text-align: center;" id="events">
-                                    <td><a href="<?php echo $urlRequestRoot?>/home">Capture The Flag</a></td>
-                                    <td><a href="<?php echo $urlRequestRoot?>/home">Code Character</a></td>
+                                    <td><a href="<?php echo $urlRequestRoot?>/home/events/byte_hoc/capture_the_flag">Capture The Flag</a></td>
+                                    <td><a href="<?php echo $urlRequestRoot?>/home/events/byte_hoc/code_character">Code Character</a></td>
                                 </tr>
                                 <tr style="text-align: center;" id="events">
-                                    <td><a href="<?php echo $urlRequestRoot?>/home">Pragyan ML Challenge</a></td>
-                                    <td><a href="<?php echo $urlRequestRoot?>/home">Code Venatic</a></td>
+                                    <td><a href="<?php echo $urlRequestRoot?>/home/events/pragyan_ml_challenga">Pragyan ML Challenge</a></td>
+                                    <td><a href="<?php echo $urlRequestRoot?>/home/events/code_venatics">Code Venatic</a></td>
                                 </tr> 
                                 </table> 
                             </div>
