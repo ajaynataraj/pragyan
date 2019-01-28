@@ -9,8 +9,6 @@
     border: none !important;
 } */
 
-
-
 a{
     outline:none;
 }
@@ -44,6 +42,10 @@ a:hover, a:active{
 }
 
 @media screen and (min-width: 768px) {
+
+    .nav-item{
+        margin: 20px;
+    }
 
     #social{
         font-size: 25px;
@@ -230,7 +232,7 @@ a:hover, a:active{
     }
 
     .tab-content{
-        min-height: 55vh;
+        min-height: 50vh;
         display: flex;
         align-items: center;
         justify-content: center;

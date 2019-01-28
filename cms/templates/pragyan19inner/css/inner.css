@@ -61,6 +61,10 @@ a:hover, a:active{
 
 @media screen and (min-width: 768px) {
 
+    .nav-item{
+        margin: 20px;
+    }
+
     #mobiletab{
         background-color: #bfbfbf;
         max-width: 70vw;
@@ -186,17 +190,17 @@ a:hover, a:active{
     margin: auto;
 }
 
-form
+/* form
 {
   position: relative;
   width:100%;
   height:100%;    margin-top: 10px;
   text-align: center;
 
-}
+} */
 
 form table{
-  margin:0 auto;
+  margin:auto;
 }
 form legend
 {
@@ -208,7 +212,7 @@ form legend
 }
 form table tr td
 {
-  text-align: center;
+  /* text-align: center; */
   padding: 5px;
 }
 form table tr td input[type="text"]:focus
@@ -250,6 +254,16 @@ form table tr td input[type="password"]
 }
 form table tr td input[type="submit"]
 {
-  width: 200px;
-  height: 40px;
+  max-width: 200px;
+  background-color: white;
+  border: 2px solid black;
+  color: black;
+  padding: 10px 15px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+}
+
+form table img{
+    max-width: 100%;
 }

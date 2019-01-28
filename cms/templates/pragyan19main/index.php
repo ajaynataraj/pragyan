@@ -137,8 +137,8 @@ if(!defined('__PRAGYAN_CMS'))
 
             .icon>img{
                 display: block;
-                height: 56px;
-                width: 56px;
+                height: 50px;
+                width: 50px;
                 border-radius: 38px;
                 background-color: rgba(0,0,0,0.5);
                 padding: 10px;
@@ -277,6 +277,7 @@ if(!defined('__PRAGYAN_CMS'))
                 position: absolute;
                 top: 50%;
             }
+
         </style>
 
     </head>
@@ -285,7 +286,7 @@ if(!defined('__PRAGYAN_CMS'))
         <div class="fade">
             <img id="bgimg" style="display: none;" src="<?php echo $TEMPLATEBROWSERPATH; ?>/images/paint4.png">
                 <div class="top">
-        <nav style="background-color: white !important; position: absolute; width: 100vw; background-color: transparent !important;" class="navbar navbar-expand-lg navbar-light bg-light">
+        <nav style="background-color: white !important; position: absolute; width: 100vw; background-color: white !important;" class="navbar navbar-expand-lg navbar-light bg-light">
             <a class="navbar-brand" href="#"><img id="navlogo" src="<?php echo $TEMPLATEBROWSERPATH; ?>/../common/images/logo.png"></a>
             <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
@@ -350,7 +351,6 @@ LOGIN;
             <a href="<?php echo $urlRequestRoot?>/exhibitions"><div onmouseover="change_desc('EXHIBITIONS')" onmouseout="clear_text()" class="icon" ><img src="<?php echo $TEMPLATEBROWSERPATH; ?>/images/Exhibitions.svg"></div></a>
             <a href="<?php echo $urlRequestRoot?>/about"><div onmouseover="change_desc('MORE')" onmouseout="clear_text()" class="icon" ><img src="<?php echo $TEMPLATEBROWSERPATH; ?>/images/Plus.svg"></div></a>
         </div>
-        <br/>
         <div id="icondesc" style="text-align: center; font-weight: bold"></div>
     </div>   
 </div>

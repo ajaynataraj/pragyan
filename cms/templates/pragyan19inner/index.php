@@ -328,7 +328,11 @@ LOGIN;
         </div>
         <div id="container">
             <div style="height: 70%;overflow-y:auto;">
-          <?php echo $CONTENT; ?>
+                <?php echo $INFOSTRING; ?>
+				<?php echo $WARNINGSTRING;?>
+                <?php echo $ERRORSTRING; ?>
+                <?php echo $CONTENT; ?>
+            </div>
         </div>
 
         <div class="footer" style="color: black;">
