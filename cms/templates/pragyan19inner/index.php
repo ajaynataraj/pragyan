@@ -327,7 +327,7 @@ LOGIN;
             </nav>
         </div>
         <div id="container">
-            <div style="height: 70%;overflow-y:auto;">
+            <div id="page-container" style="height: 70%;overflow-y:auto;">
                 <?php echo $INFOSTRING; ?>
 				<?php echo $WARNINGSTRING;?>
                 <?php echo $ERRORSTRING; ?>

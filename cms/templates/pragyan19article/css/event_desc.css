@@ -179,3 +179,6 @@ a:hover, a:active{
 
 
 }
+.tab-pane a {
+    color: blue !important;
+}
