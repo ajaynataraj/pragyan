@@ -211,13 +211,13 @@ LOGIN;
                     <div class="vertical-tab" role="tabpanel">
                         <!-- Nav tabs -->
                         <ul id="widetab" style="display:none" class="nav nav-tabs" role="tablist">
-                            <li id="byte_hoc" class="cluster" role="presentation"><a href="#section_byte_hoc" aria-controls="home" role="tab" data-toggle="tab">Bytehoc</a></li>
-                            <li id="trivia" class="cluster" role="presentation"><a href="#section_trivia" aria-controls="profile" role="tab" data-toggle="tab">Trivia</a></li>
-                            <li id="phronesis" class="cluster" role="presentation"><a href="#section_phronesis" aria-controls="messages" role="tab" data-toggle="tab">Phronesis</a></li>
-                            <li id="concreate" class="cluster" role="presentation"><a href="#section_concreate" aria-controls="profile" role="tab" data-toggle="tab">Concreate</a></li>
                             <li id="robo_rex" class="cluster" role="presentation"><a href="#section_robo_rex" aria-controls="messages" role="tab" data-toggle="tab">Roborex</a></li>
-                            <li id="conception" class="cluster" role="presentation"><a href="#section_conception" aria-controls="messages" role="tab" data-toggle="tab">Conception</a></li>
+                            <li id="byte_hoc" class="cluster" role="presentation"><a href="#section_byte_hoc" aria-controls="home" role="tab" data-toggle="tab">Bytehoc</a></li>
+                            <li id="concreate" class="cluster" role="presentation"><a href="#section_concreate" aria-controls="profile" role="tab" data-toggle="tab">Concreate</a></li>
                             <li id="manigma" class="cluster" role="presentation"><a href="#section_manigma" aria-controls="profile" role="tab" data-toggle="tab">Manigma</a></li>
+                            <li id="phronesis" class="cluster" role="presentation"><a href="#section_phronesis" aria-controls="messages" role="tab" data-toggle="tab">Phronesis</a></li>
+                            <li id="trivia" class="cluster" role="presentation"><a href="#section_trivia" aria-controls="profile" role="tab" data-toggle="tab">Trivia</a></li>
+                            <li id="conception" class="cluster" role="presentation"><a href="#section_conception" aria-controls="messages" role="tab" data-toggle="tab">Conception</a></li>
                         </ul>
                         <!-- Tab panes -->
                         <div class="tab-content tabs">
@@ -323,13 +323,13 @@ LOGIN;
                         </div>
 
                         <ul id=mobiletab style="display: none;" class="nav nav-tabs" role="tablist">
-                        <li id="byte_hoc" class="cluster" role="presentation"><a href="#section_byte_hoc" aria-controls="home" role="tab" data-toggle="tab">Bytehoc</a></li>
-                            <li id="trivia" class="cluster" role="presentation"><a href="#section_trivia" aria-controls="profile" role="tab" data-toggle="tab">Trivia</a></li>
-                            <li id="phronesis" class="cluster" role="presentation"><a href="#section_phronesis" aria-controls="messages" role="tab" data-toggle="tab">Phronesis</a></li>
-                            <li id="concreate" class="cluster" role="presentation"><a href="#section_concreate" aria-controls="profile" role="tab" data-toggle="tab">Concreate</a></li>
                             <li id="robo_rex" class="cluster" role="presentation"><a href="#section_robo_rex" aria-controls="messages" role="tab" data-toggle="tab">Roborex</a></li>
-                            <li id="conception" class="cluster" role="presentation"><a href="#section_conception" aria-controls="messages" role="tab" data-toggle="tab">Conception</a></li>
+                            <li id="byte_hoc" class="cluster" role="presentation"><a href="#section_byte_hoc" aria-controls="home" role="tab" data-toggle="tab">Bytehoc</a></li>
+                            <li id="concreate" class="cluster" role="presentation"><a href="#section_concreate" aria-controls="profile" role="tab" data-toggle="tab">Concreate</a></li>
                             <li id="manigma" class="cluster" role="presentation"><a href="#section_manigma" aria-controls="profile" role="tab" data-toggle="tab">Manigma</a></li>
+                            <li id="phronesis" class="cluster" role="presentation"><a href="#section_phronesis" aria-controls="messages" role="tab" data-toggle="tab">Phronesis</a></li>
+                            <li id="trivia" class="cluster" role="presentation"><a href="#section_trivia" aria-controls="profile" role="tab" data-toggle="tab">Trivia</a></li>
+                            <li id="conception" class="cluster" role="presentation"><a href="#section_conception" aria-controls="messages" role="tab" data-toggle="tab">Conception</a></li>
                         </ul>
 
 
