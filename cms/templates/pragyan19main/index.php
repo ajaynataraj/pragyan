@@ -286,8 +286,8 @@ if(!defined('__PRAGYAN_CMS'))
         <div class="fade">
             <img id="bgimg" style="display: none;" src="<?php echo $TEMPLATEBROWSERPATH; ?>/images/paint4.png">
                 <div class="top">
-        <nav style="background-color: white !important; position: absolute; width: 100vw; background-color: white !important;" class="navbar navbar-expand-lg navbar-light bg-light">
-            <a class="navbar-brand" href="#"><img id="navlogo" src="<?php echo $TEMPLATEBROWSERPATH; ?>/../common/images/logo.png"></a>
+        <nav style="background-color: transparent !important; position: absolute; width: 100vw;" class="navbar navbar-expand-lg navbar-light bg-light">
+            <a class="navbar-brand" href="<?php echo $urlRequestRoot?>/home"><img id="navlogo" src="<?php echo $TEMPLATEBROWSERPATH; ?>/../common/images/logo.png"></a>
             <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
         </button>
@@ -362,6 +362,8 @@ LOGIN;
             <li><a href="https://twitter.com/nitt_pragyan" target="_blank"><i class="fab fa-twitter"></i></a></li>
             <li><a href="https://www.instagram.com/pragyan_nitt/" target="_blank"><i class="fab fa-instagram"></i></a></li>
             <li><a href="https://www.youtube.com/c/pragyannittrichy" target="_blank"><i class="fab fa-youtube"></i></a></li>
+            <li><a href="https://medium.com/pragyan-blog" target="_blank"><i class="fab fa-medium"></i></a></li>
+            <li><a href="https://in.linkedin.com/company/pragyan.nitt" target="_blank"><i class="fab fa-linkedin"></i></a></li>
         </ul>
     </div>
     <div id="typed-strings">

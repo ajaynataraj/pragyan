@@ -82,9 +82,14 @@ RET;
                 $ERRORSTRING = "";
                 $moduleType = $row['page_module'];
                 $active = "";
-                if($navigate == $row['page_id']||getPageModule($row['page_id'])=='book'&&$this->isPresent($row['page_id'],$navigate))
+                $tabActive = "";
+                $textSelected = "false";
+                if($navigate == $row['page_id']||getPageModule($row['page_id'])=='book'&&$this->isPresent($row['page_id'],$navigate)) {
                     $active = ' active';
-                $tabList .= "<li role='presentation'><a id='{$this->pageId}_{$row['page_id']}' role='tab' data-toggle='tab' href='#{$this->pageId}_{$row['page_id']}'>{$row['page_title']}</a></li>";
+                    $tabActive = "active show";
+                    $textSelected = "true";
+                }
+                $tabList .= "<li role='presentation'><a class='$tabActive' aria-selected='$textSelected' id='{$this->pageId}_{$row['page_id']}' role='tab' data-toggle='tab' href='#{$this->pageId}_{$row['page_id']}'>{$row['page_title']}</a></li>";
                 $content = getContent($row['page_id'], "view", $this->userId, true);
                 $content = preg_replace('/<a(.*)href=[\'"](.\/)+(.*)[\'"](.*)>(.*)<\/a>/i', '<a$1href="./' . $row['page_name'] . '/$3"$4>$5</a>', $content);
                 $content = preg_replace('/<form(.*)action=[\'"](.\/)+(.*)[\'"](.*)>/i', '<form$1action="./' . $row['page_name'] . '/$3"$4>', $content);
