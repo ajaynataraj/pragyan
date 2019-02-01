@@ -230,7 +230,10 @@ LOGIN;
                                 </tr>
                                 <tr style="text-align: center;" id="events">
                                     <td><a href="<?php echo $urlRequestRoot?>/home/events/byte_hoc/pragyan_ml_challenge">Pragyan ML Challenge</a></td>
-                                    <td><a href="<?php echo $urlRequestRoot?>/home/events/byte_hoc/code_venati">Code Venatic</a></td>
+                                    <td><a href="<?php echo $urlRequestRoot?>/home/events/byte_hoc/code_venatic">Code Venatic</a></td>
+                                </tr>
+                                <tr style="text-align: center;" id="events">
+                                    <td colspan=2><a href="<?php echo $urlRequestRoot?>/home/events/byte_hoc/threes_a_crowd/"> Three's a Crowd</a></td>
                                 </tr> 
                                 </table> 
                             </div>
@@ -240,12 +243,13 @@ LOGIN;
                                 <tr style="text-align: center;" id="events">
                                     <td><a href="<?php echo $urlRequestRoot?>/home/events/trivia/biz_quiz/">BIZ Quiz</a></td>
                                     <td><a href="<?php echo $urlRequestRoot?>/home/events/trivia/pragyan_main_quiz/">Pragyan main quiz</a></td>
-                                    <td><a href="<?php echo $urlRequestRoot?>/home/events/trivia/memory_challenge/">Memory challenge</a></td>
+                                </tr>
+                                <tr style="text-align: center;" id=events">"   
+                                     <td><a href="<?php echo $urlRequestRoot?>/home/events/trivia/pragyan_cube_open/">Pragyan Cube Open</td>
+                                     <td><a href="<?php echo $urlRequestRoot?>/home/events/trivia/how_stuff_works/">How stuff works</a></td>
                                 </tr>
                                 <tr style="text-align: center;" id="events">
-                                    <td><a href="<?php echo $urlRequestRoot?>/home/events/trivia/how_stuff_works/">How stuff works</a></td>
-                                    <td><a href="<?php echo $urlRequestRoot?>/home/events/trivia/fundamental/">Fundamental</a></td>
-                                    <td><a href="<?php echo $urlRequestRoot?>/home/events/trivia/pragyan_cube_opens/">Pragyan Cube Opens</a></td>
+                                    <td colspan=2><a href="<?php echo $urlRequestRoot?>/home/events/trivia/fundamental/">Fundamental</a></td>
                                 </tr> 
                                 </table> 
                             </div>
