@@ -16,6 +16,12 @@ if(!defined('__PRAGYAN_CMS'))
 		<meta name="description" content="<?php echo $SITEDESCRIPTION ?>" />
 		<meta name="keywords" content="<?php echo $SITEKEYWORDS.', '.$PAGEKEYWORDS ?>" />
         <meta name="google" content="notranslate">
+        <script>
+            window.dataLayer = window.dataLayer || [];
+            function gtag(){dataLayer.push(arguments);}
+            gtag('js', new Date());
+            gtag('config', 'UA-133654966-1');
+        </script>   
         <?php global $urlRequestRoot;	global $PAGELASTUPDATED;
 		if($PAGELASTUPDATED!="")
 		echo '<meta http-equiv="Last-Update" content="'.substr($PAGELASTUPDATED,0,10).'" />'."\n";
@@ -37,7 +43,7 @@ if(!defined('__PRAGYAN_CMS'))
         html {
             display: -webkit-flex;
             display: flex;
-            height: 100%;
+            max-height: 100%;
             font-family: 'Montserrat', sans-serif !important;
         }
 
@@ -48,7 +54,7 @@ if(!defined('__PRAGYAN_CMS'))
             position: relative;
             font-weight: 500;
             width: 100%;
-            height: 100%;
+            max-height: 100%;
             overflow-x: hidden;
             overflow-y:hidden;
             
@@ -239,6 +245,9 @@ if(!defined('__PRAGYAN_CMS'))
                 margin-block-end: 0;
                 padding-inline-start: 0;
             }
+            form {
+                max-height: 60vh;
+            }
         }
 
         @media screen and (min-width: 768px) {
@@ -254,6 +263,11 @@ if(!defined('__PRAGYAN_CMS'))
                 position: absolute;
                 right: 30px;
                 bottom: 10px;
+            }
+            
+            #iconlist a{
+                display:block;
+                margin:5px;
             }
         }
 
@@ -337,14 +351,14 @@ LOGIN;
 
         <div class="footer" style="color: black;">
         <div id="social">
-                <ul id="iconlist" style="list-style-type:none;">
-                    <li><a href="https://www.facebook.com/pragyan.nitt/" target="_blank"><i class="fab fa-facebook"></i></a></li>
-                    <li><a href="https://twitter.com/nitt_pragyan" target="_blank"><i class="fab fa-twitter"></i></a></li>
-                    <li><a href="https://www.instagram.com/pragyan_nitt/" target="_blank"><i class="fab fa-instagram"></i></a></li>
-                    <li><a href="https://www.youtube.com/c/pragyannittrichy" target="_blank"><i class="fab fa-youtube"></i></a></li>
-                    <li><a href="https://medium.com/pragyan-blog" target="_blank"><i class="fab fa-medium"></i></a></li>
-                    <li><a href="https://in.linkedin.com/company/pragyan.nitt" target="_blank"><i class="fab fa-linkedin"></i></a></li>
-                </ul>
+                <div id="iconlist" style="list-style-type:none;">
+                    <a href="https://www.facebook.com/pragyan.nitt/" target="_blank"><i class="fab fa-facebook"></i></a>
+                    <a href="https://twitter.com/nitt_pragyan" target="_blank"><i class="fab fa-twitter"></i></a>
+                    <a href="https://www.instagram.com/pragyan_nitt/" target="_blank"><i class="fab fa-instagram"></i></a>
+                    <a href="https://www.youtube.com/c/pragyannittrichy" target="_blank"><i class="fab fa-youtube"></i></a>
+                    <a href="https://medium.com/pragyan-blog" target="_blank"><i class="fab fa-medium"></i></a>
+                    <a href="https://in.linkedin.com/company/pragyan.nitt" target="_blank"><i class="fab fa-linkedin"></i></a>
+                </div>
             </div>
             <p>Made with ♥ by <a href="https://delta.nitt.edu" target="_blank">DeltaForce</a> and <a href="https://behance.net/pragyan_nitt"target="_blank">Design team</a> </p>
         </div>

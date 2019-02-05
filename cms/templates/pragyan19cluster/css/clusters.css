@@ -232,7 +232,8 @@ a:hover, a:active{
     }
 
     .tab-content{
-        min-height: 50vh;
+        min-height: 40vh;
+        max-height: 40vh;
         display: flex;
         align-items: center;
         justify-content: center;
@@ -256,6 +257,7 @@ a:hover, a:active{
 
     .footer{
         font-size: 12px;
+        bottom: -2vh !important;
     }
 
 

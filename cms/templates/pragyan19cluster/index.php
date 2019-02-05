@@ -16,6 +16,13 @@ if(!defined('__PRAGYAN_CMS'))
 		<meta name="description" content="<?php echo $SITEDESCRIPTION ?>" />
 		<meta name="keywords" content="<?php echo $SITEKEYWORDS.', '.$PAGEKEYWORDS ?>" />
         <meta name="google" content="notranslate">
+        <script async src="https://www.googletagmanager.com/gtag/js?id=UA-133654966-1"></script>
+        <script>
+            window.dataLayer = window.dataLayer || [];
+            function gtag(){dataLayer.push(arguments);}
+            gtag('js', new Date());
+            gtag('config', 'UA-133654966-1');
+        </script>
         <?php global $urlRequestRoot;	global $PAGELASTUPDATED;
 		if($PAGELASTUPDATED!="")
 		echo '<meta http-equiv="Last-Update" content="'.substr($PAGELASTUPDATED,0,10).'" />'."\n";
