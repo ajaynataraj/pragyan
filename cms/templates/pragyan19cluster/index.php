@@ -280,7 +280,7 @@ LOGIN;
                                     <td><a href="<?php echo $urlRequestRoot?>/home/events/concreate/mortar_master/">Mortar Master</a></td>
                                 </tr>
                                 <tr style="text-align: center;" id="events">
-                                    <td colspan=2><a href="<?php echo $urlRequestRoot?>/home/events/concreate/town_tracing/">Town Tracing</a></td>
+                                    <td colspan=2><a href="<?php echo $urlRequestRoot?>/home/events/concreate/town_trace/">Town Trace</a></td>
                                 </tr> 
                                 </table> 
                             </div>

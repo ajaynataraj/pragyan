@@ -1,0 +1,298 @@
+:root{
+    --text_color: black;
+    --main_color: black;
+    --bg_color:white;
+}
+/* a:hover,a:focus{
+    text-decoration: none;
+    outline: none;
+    border: none !important;
+} */
+
+.navbar-brand:hover{
+    transform: none;
+}
+
+#main{
+    top: 5vh;
+}
+
+a{
+    outline:none;
+}
+
+td a:hover{
+    font-weight: bold;
+}
+
+.nav-link{
+    text-align: right;
+}
+
+a, a:hover, a:active {
+    text-decoration: none;
+}
+
+a:hover, a:active{
+    transform: scale(1.3);
+}
+
+.active{
+    transform: scale(1.3);
+}
+
+.nav-tabs > li {
+    float:none;
+    display:inline-block;
+    zoom:1;
+}
+
+.nav-tabs {
+    text-align:center;
+}
+
+.nav>li{
+    padding: 10px;
+}
+
+.divider{
+    padding: 0 !important; 
+}
+
+@media screen and (min-width: 768px) {
+
+    .nav-item{
+        margin: 20px;
+    }
+
+    #mobiletab{
+        background-color: #bfbfbf;
+        max-width: 70vw;
+        border-radius: 10px;
+    }
+
+    #navlogo{
+        width: 150px;
+    }
+
+    .nav>li>a {
+        border: none !important;
+    }
+
+    .nav-tabs>li.active>a, .nav-tabs>li.active>a:focus, .nav-tabs>li.active>a:hover {
+        border-top: none;
+        border-bottom: none;
+    }
+
+    .nav>li>a:focus, .nav>li>a:hover {
+        background-color: transparent !important;
+        border: none !important;
+        font-weight: bold;
+    }
+
+    #bgimg {
+        left: calc(50% - 17.5vw);
+        max-width: 35vw;
+        top: 16.5vh !important;
+    }
+
+    .clustertitle{
+        text-align:center; 
+        color: white; 
+        font-size: 3vw; 
+        font-weight: bolder; 
+        text-shadow: 3px 3px #888888;
+    }
+
+}
+
+@media screen and (max-width: 767px) {
+
+    #navlogo{
+        width: 100px;
+    }
+
+    #bgimg{
+        left: calc(50% - 17.5vw);
+        max-width: 35vw;
+        top: 18.5vh !important;
+    }
+
+    /* img {
+        position: absolute;
+    } */
+
+    .nav-tabs>li>a{
+        border: none !important;
+
+    }
+
+    .nav-tabs>li.active>a, .nav-tabs>li.active>a:focus, .nav-tabs>li.active>a:hover {
+        border-top: none;
+        border-bottom: none;
+    }
+
+    .nav>li>a:focus, .nav>li>a:hover {
+        background-color: transparent !important;
+        border: none !important;
+        font-weight: bold;
+    }
+
+    .nav{
+        border: none;
+        font-size: 12px;
+        padding: 0;
+        margin: auto;
+    }
+
+    #mobiletab{
+        display: block !important;
+    }
+
+    td{
+        font-size: 10px !important;
+    }
+
+    table{
+        width: 80vw;
+    }
+
+    .tab-content{
+        min-height: 35vh;
+        max-height: 35vh;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        top: 10vh;
+    }
+
+    .clustertitle{
+        text-align:center; 
+        color: white; 
+        font-size: 8vw; 
+        font-weight: bolder; 
+        text-shadow: 3px 3px #888888;
+    }
+
+    .footer{
+        font-size: 12px;
+    }
+
+
+}
+
+#container{
+    height: 100vh; 
+    width: 95vw;
+    flex-direction: column;
+    display: flex; 
+    align-items: center; 
+    justify-content: center;
+    margin: auto;
+}
+
+/* form
+{
+  position: relative;
+  width:100%;
+  height:100%;    margin-top: 10px;
+  text-align: center;
+
+} */
+
+form table{
+  margin:auto;
+}
+form legend
+{
+  font-weight: bold;
+}
+.registrationform legend
+{
+  display: none;
+}
+form table tr td
+{
+  /* text-align: center; */
+  padding: 5px;
+}
+form table tr td input[type="text"]:focus
+{
+  outline: none;
+}
+form table tr td input[type="email"]:focus
+{
+  outline: none;
+}
+form table tr td input[type="password"]:focus
+{
+  outline: none;
+}
+form table tr td input[type="text"]
+{
+  width: 100%;
+  height: 40px;
+  max-width: 400px;
+}
+form table tr td input[type="email"]
+{
+    width: 100%;
+    height: 40px;
+    max-width: 400px;
+}
+
+form table tr td select
+{
+    width: 100%;
+    height: 40px;
+    max-width: 400px;
+}
+form table tr td input[type="password"]
+{
+    width: 100%;
+    height: 40px;
+    max-width: 400px;
+}
+form table tr td input[type="submit"]
+{
+  max-width: 200px;
+  background-color: white;
+  border: 2px solid black;
+  color: black;
+  padding: 10px 15px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+}
+
+form table img{
+    max-width: 100%;
+}
+
+input[type=submit] {
+    display:none;
+}
+.registrationform  a {
+    background-color: #c02748;
+    width: 200px;
+    height: 69px;
+    display: block;
+    vertical-align: middle;
+    padding: 20px 57.5px;
+    left: 50%;
+    transform: translateX(-50%);
+    position: absolute;
+    border: none !important;
+    color: white !important;
+    box-shadow: 0 1px 5px grey;
+}
+
+.registrationform  a:hover {
+    box-shadow: 0 1px 5px grey, 1px 2px 10px #333;
+}
+
+.registrationform  a:active {
+     box-shadow: none;
+     background-color: #84162d;
+ }
+
