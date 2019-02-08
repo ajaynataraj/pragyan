@@ -106,7 +106,7 @@ function firstTimeGetUserId() {
 			if ($_SESSION['data'] == $sessionData) {
 				if(!isset($_GET['fileget'])) {
 					global $cookie_timeout,$cookie_path;
-					setcookie('PHPSESSID',$_COOKIE['PHPSESSID'],time()+$cookie_timeout, $cookie_path);
+					setcookie('PHPSESSID',$_COOKIE['PHPSESSID'],time()+$cookie_timeout, $cookie_path,'pragyan.org');
 				}
 				return $user_id;
 			}

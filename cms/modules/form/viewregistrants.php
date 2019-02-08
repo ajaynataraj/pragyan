@@ -90,16 +90,30 @@ function generateFormDataRow($moduleCompId, $userId, $columnList, $showProfileDa
 	}
 	if($showProfileData) { 
 		if($userId > 0) {
-			$elementDataQuery = 'SELECT `form_elementdata`, `form_elementdesc`.`form_elementid`, `form_elementdesc`.`form_elementname`, `form_elementdesc`.`form_elementtype` FROM `form_elementdesc`, `form_elementdata` WHERE ' .
+		$whiteList = [
+			'contact',
+			'degree',
+			'yearOfStudy',
+			'institution',
+			'college_Name',
+			'state',
+			'city'
+		];
+	$elementDataQuery = 'SELECT `form_elementdata`, `form_elementdesc`.`form_elementid`, `form_elementdesc`.`form_elementname`, `form_elementdesc`.`form_elementtype` FROM `form_elementdesc`, `form_elementdata` WHERE ' .
 						"`form_elementdata`.`page_modulecomponentid` = 0 AND `user_id` = '$userId' AND " .
 						"`form_elementdata`.`page_modulecomponentid` = `form_elementdesc`.`page_modulecomponentid` AND " .
 						"`form_elementdata`.`form_elementid` = `form_elementdesc`.`form_elementid` ORDER BY `form_elementrank`";
 			$elementDataResult = mysqli_query($GLOBALS["___mysqli_ston"], $elementDataQuery) or die($elementDataQuery . '<br />' . ((is_object($GLOBALS["___mysqli_ston"])) ? mysqli_error($GLOBALS["___mysqli_ston"]) : (($___mysqli_res = mysqli_connect_error()) ? $___mysqli_res : false)));
 			while($elementDataRow = mysqli_fetch_assoc($elementDataResult)) {
-				$elementRow['form0_' . $elementDataRow['form_elementname']] = $elementDataRow['form_elementdata'];
-				if($elementDataRow['form_elementtype'] == 'file') {
-					$elementRow['form0_' . $elementDataRow['form_elementname']] = '<a href="./'.$elementDataRow['form_elementdata'].'">' . $elementDataRow['form_elementdata'] . '</a>';
+				if(in_array($elementDataRow['form_elementname'],$whiteList)){
+					$elementRow['form0_' . $elementDataRow['form_elementname']] = $elementDataRow['form_elementdata'];
+					if($elementDataRow['form_elementtype'] == 'file') {
+						$elementRow['form0_' . $elementDataRow['form_elementname']] = '<a href="./'.$elementDataRow['form_elementdata'].'">' . $elementDataRow['form_elementdata'] . '</a>';
+					}
 				}
+				else {
+					$elementRow['form0_' . $elementDataRow['form_elementname']] = 'HIDDEN';
+				}	
 			}
 			$userProfile = "SELECT * FROM " . MYSQL_DATABASE_PREFIX . "users WHERE `user_id` = {$userId}";	
 			$userResult = mysqli_query($GLOBALS["___mysqli_ston"], $userProfile) or displayerror(((is_object($GLOBALS["___mysqli_ston"])) ? mysqli_error($GLOBALS["___mysqli_ston"]) : (($___mysqli_res = mysqli_connect_error()) ? $___mysqli_res : false)));
@@ -121,7 +135,7 @@ function generateFormDataRow($moduleCompId, $userId, $columnList, $showProfileDa
 
 
 	if(in_array('useremail', $columnList)) {
-		$elementRow['useremail'] = getUserEmail($userId);
+		$elementRow['useremail'] = "<b>${$userId}</b><br>".getUserEmail($userId);
 	}
 	if(in_array('username', $columnList)) {
 		$elementRow['username'] = getUserName($userId);
@@ -414,7 +428,7 @@ EDITREGISTRANTSVIEW;
 		header("Cache-Control: must-revalidate, post-check=0, pre-check=0");
 		header("Cache-Control: private",false); 
 		header("Content-Type: application/vnd.ms-excel");
-		header("Content-Disposition: attachment; filename=\"$formName.xls\";" );
+		header("Content-Disposition: attachment; filename=\"$formName.registrations.xls\";" );
 		header("Content-Transfer-Encoding: binary");
 		echo '<table>' . $tableCaptions . $tableBody . '</table>';
 		exit(1);
