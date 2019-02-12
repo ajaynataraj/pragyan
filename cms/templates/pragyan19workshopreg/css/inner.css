@@ -277,7 +277,6 @@ input[type=submit] {
     width: 200px;
     height: 69px;
     display: block;
-    vertical-align: middle;
     padding: 20px 57.5px;
     left: 50%;
     transform: translateX(-50%);
@@ -285,14 +284,15 @@ input[type=submit] {
     border: none !important;
     color: white !important;
     box-shadow: 0 1px 5px grey;
+    transition: box-shadow 0.2s, background-color 0.1s;
 }
 
 .registrationform  a:hover {
-    box-shadow: 0 1px 5px grey, 1px 2px 10px #333;
+    box-shadow: 0 1px 5px grey, 1px 2px 10px grey, 2px 3px 15px #333;
 }
 
 .registrationform  a:active {
-     box-shadow: none;
-     background-color: #84162d;
- }
-
+    box-shadow: none;
+    background-color: #84162d;
+    transform: translateX(-50%);
+}

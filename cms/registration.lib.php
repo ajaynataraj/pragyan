@@ -104,7 +104,7 @@ function getRegistrationForm() {
 			$dynamicFields
    			$captchaHtml
             <tr>
-                 <td colspan="2" style="text-align:center;">By clicking Sign Up, you agree to the <a href="https://www.pragyan.org/19/home/terms_and_conditions">Terms</a> and <a href="https://www.pragyan.org/19/home/le    gal">Privacy Policy</a></td>
+                 <td colspan="2" style="text-align:center;">By clicking Sign Up, you agree to the <a href="https://www.pragyan.org/19/home/terms_and_conditions">Terms & Conditions</a> and <a href="https://www.pragyan.org/19/home/legal">Privacy Policy</a></td>
             </tr>
             <tr>
 				<td colspan="2">* - Required Fields&nbsp;</td>

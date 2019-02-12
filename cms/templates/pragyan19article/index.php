@@ -195,7 +195,7 @@ if(!defined('__PRAGYAN_CMS'))
         .tab-pane {
             min-height: 35vh;
             max-height: 35vh;
-            overflow-y: scroll;    
+            overflow-y: auto;    
         }
 
         .nav{
@@ -323,5 +323,26 @@ LOGIN;
         </div>
         
     </div>
+
+    <script>
+        function setResponsiveHeight() {
+            if (window.innerWidth <= 767) {
+                height = document.querySelector("ul.nav.nav-tabs").offsetHeight;
+                document.querySelector("div.tab-content.tabs").style.height = `${window.innerHeight - 200 - 52 - height}px`;
+                
+                document.querySelectorAll("div.tab-pane.fade").forEach(div => {
+                    div.style.height = `${window.innerHeight - 200 - 52 - 20 - height}px`;
+                });
+            }
+        }
+        setResponsiveHeight();
+        setInterval(() => {
+            setResponsiveHeight();
+        }, 2000);
+        window.addEventListener('resize', () => {
+            setResponsiveHeight();
+        });
+        
+    </script>
 </body>
 </html>

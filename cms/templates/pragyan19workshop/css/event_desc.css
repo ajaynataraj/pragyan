@@ -56,7 +56,7 @@ a:hover, a:active{
 }
 
 .divider{
-    padding: 0 !important; 6.5
+    padding: 0 !important;
 }
 
 .tab-pane{
@@ -197,16 +197,117 @@ a:hover, a:active{
 a.active {
     font-weight: bold;
 }
+/* OVERRIDES */
+#main {
+    top: 116px;
+}
+
+.tab-pane, .tab-content {
+    margin-bottom: 60px;
+    text-align: justify;
+}
+
+ul#mobiletab {
+    display: flex !important;
+    justify-content: space-evenly;
+    background-color: #eeeeee !important;
+    max-width: 80vw;
+}
+
+div#container {
+    margin-bottom: -52px !important;
+    flex-direction: column;
+}
+
+div#push {
+    height: 52px;
+}
+
+#bgimg {
+    top: 130px !important;
+    /* left: calc(50% - 25vw);
+    max-width: 50vw; */
+}
+
+p.clustertitle {
+    top: 173px !important;
+    left: 50%;
+    transform: translate(-50%);
+}
+
+@media screen and (max-height: 675px) {
+    #bgimg {
+        top: 60px !important;
+    }
+    p.clustertitle {
+        top: 100px !important;
+    }
+
+    #main {
+        top: 60px;
+    }
+}
+
+@media screen and (max-width: 767px) {
+    #container {
+        justify-content: flex-start !important;
+    }
+
+    #main {
+        top: 130px;
+    }
+
+    .tab-content {
+        min-height: initial;
+        max-height: initial;
+        height: 35vh;
+        display: flex;
+        align-items: flex-start;
+        padding: 0 !important;
+        width: 90vw !important;
+    }
+
+    .tab-pane {
+        /* width: 70vw !important; */
+        min-height: initial !important;
+        max-height: initial !important;
+        /* height: calc(60vh - 150px - 52px) !important; */
+        /* margin-top: 0 !important; */
+        margin-bottom: 0 !important;
+        width: 100% !important;
+        margin-top: 0px !important;
+        transform: none;
+    }
+
+    #bgimg {
+        left: calc(50% - 25vw);
+        max-width: 50vw;
+        top: 75px !important;
+    }
+
+    p.clustertitle {
+        top: 92px !important;
+    }
+
+    footer p {
+        bottom: 0;
+        margin-bottom: 10px;
+    }
+
+    ul#mobiletab {
+        margin-bottom: 0 !important;
+        width: 90vw;
+    }
+}
 
 input[type=submit] {
     display:none;
 }
-.registrationform  a { 
+.registrationform  a {
     background-color: #c02748;
     width: 200px;
     height: 69px;
     display: block;
-    vertical-align: middle;
     padding: 20px 57.5px;
     left: 50%;
     transform: translateX(-50%);
@@ -214,15 +315,15 @@ input[type=submit] {
     border: none !important;
     color: white !important;
     box-shadow: 0 1px 5px grey;
+    transition: box-shadow 0.2s, background-color 0.1s;
 }
 
 .registrationform  a:hover {
-        box-shadow: 0 1px 5px grey, 1px 2px 10px #333;
-
+    box-shadow: 0 1px 5px grey, 1px 2px 10px grey, 2px 3px 15px #333;
 }
 
-.registrationform  a:active {                                                                                                                                                                                                               
-     box-shadow: none;
-      background-color: #84162d;
+.registrationform  a:active {
+    box-shadow: none;
+    background-color: #84162d;
+    transform: translateX(-50%);
 }
-
