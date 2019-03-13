@@ -18,4 +18,9 @@ function retOtherCollFormId(){
   $otherCollFormId = 12;
   return $otherCollFormId;
 }
+
+function retVoucherFormId(){
+  $voucherFormId = 13;
+  return $voucherFormId;
+}
 ?>
