@@ -34,18 +34,16 @@ if(!defined('__PRAGYAN_CMS'))
     integrity="sha256-3edrmyuQ0w65f8gfBsqowzjJe2iM6n0nKciPUp8y+7E="
     crossorigin="anonymous">
     </script>
-
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
-
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css" integrity="sha384-UHRtZLI+pbxtHCWp1t77Bi1L4ZtiqrqD80Kn4Z8NTSRyMA2Fd33n5dQ8lWUE00s/" crossorigin="anonymous">
-    <link rel="stylesheet" type="text/css" href="<?php echo $TEMPLATEBROWSERPATH; ?>/css/event_desc.css">
+    <link rel="stylesheet" type="text/css" href="<?php echo $TEMPLATEBROWSERPATH; ?>/css/inner.css">
     <style>
 
         html {
             display: -webkit-flex;
             display: flex;
-            height: 100%;
+            max-height: 100%;
             font-family: 'Montserrat', sans-serif !important;
         }
 
@@ -56,7 +54,7 @@ if(!defined('__PRAGYAN_CMS'))
             position: relative;
             font-weight: 500;
             width: 100%;
-            height: 100%;
+            max-height: 100%;
             overflow-x: hidden;
             overflow-y:hidden;
             
@@ -70,12 +68,10 @@ if(!defined('__PRAGYAN_CMS'))
             position: absolute;
         }
 
-        #borderimg {
-            position: absolute;
-        } 
+
 
         .logo {
-            background-image: url(<?php echo $TEMPLATEBROWSERPATH; ?>/../common/images/logo.png);
+            background-image: url(img/logo.png);
             background-position: center;
             background-repeat: no-repeat;
             background-size: contain;
@@ -118,6 +114,7 @@ if(!defined('__PRAGYAN_CMS'))
 
         #container{
             height: 100vh; 
+            widows: 95vw;
             display: flex; 
             align-items: center; 
             justify-content: center;
@@ -166,16 +163,6 @@ if(!defined('__PRAGYAN_CMS'))
             border-right: 0.5px solid black;
         }
 
-        td{
-            width: 20vw;
-            height: 40px;
-            font-size: 20px;
-        }
-
-        td a:hover{
-            font-weight: bold;
-        }
-
         .tab-content{
             margin-top: 5vh;
             margin-bottom: 4vh;
@@ -184,6 +171,19 @@ if(!defined('__PRAGYAN_CMS'))
             width: 70vw;
             margin: auto;
             padding: 20px;
+        }
+
+        select{
+            width:100%;max-width:90%;
+        }
+
+        td {
+            width: 100%;
+        }
+
+        table { 
+            table-layout: fixed;
+            width: 80vw; 
         }
 
         .nav{
@@ -197,22 +197,36 @@ if(!defined('__PRAGYAN_CMS'))
         .tab-pane {
             min-height: 35vh;
             max-height: 35vh;
-            overflow-y: auto;   
+            overflow-y: scroll;    
         }
 
         .nav{
+            margin-top: 4vh !important;
+            margin-bottom: 10vh !important;
+        }
+
+        input[type="radio"] {
+            width:inherit;
+        }
+
+        input{
+            width: 35vw;
         }
 
         nav a:hover, a:active {
-            transform: none;
+          transform: none;
         }
+
+        .registrationform{
+            height: auto;
+            overflow: hidden;}
 
         @media screen and (max-width: 767px) {
             .tab-pane,.tab-content{
                 width: 60vw;
             }
             .tab-pane{
-                margin-top: 5vh;
+                margin-top: 15vh;
                 font-size: 10px;
             }
 
@@ -231,6 +245,9 @@ if(!defined('__PRAGYAN_CMS'))
                 margin-block-end: 0;
                 padding-inline-start: 0;
             }
+            form {
+                max-height: 60vh;
+            }
         }
 
         @media screen and (min-width: 768px) {
@@ -247,7 +264,25 @@ if(!defined('__PRAGYAN_CMS'))
                 right: 30px;
                 bottom: 10px;
             }
+            
+            #iconlist a{
+                display:block;
+                margin:5px;
+            }
+        }
 
+        td, th {
+            padding: 15px 5px;
+            display: table-cell;
+            text-align: left;
+            vertical-align: middle;
+            border-radius: 2px;
+        }
+
+        form{
+            height: 70vh;
+            overflow-x: hidden;
+            overflow-y: scroll;
         }
 
     </style>
@@ -274,7 +309,7 @@ if(!defined('__PRAGYAN_CMS'))
                                 <a class="nav-link" onclick="window.history.back()">Back</a>
                         </li>
                     <li style="z-index:1000;" class="nav-item dropdown">
-                    <?php
+                      <?php
                             if(isset($_SESSION['userId'])){
                                 $logout =  <<<LOGIN
                                     <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
@@ -306,46 +341,29 @@ LOGIN;
             </nav>
         </div>
         <div id="container">
-            <img id="bgimg" src="<?php echo $TEMPLATEBROWSERPATH; ?>/images/paint5.png">
-            <img id="borderimg" src="<?php echo $TEMPLATEBROWSERPATH; ?>/images/Mainmax Box.png">
-            <?php echo $CONTENT; ?>
+            <div class="page-container" style="height: 70%;overflow-y:auto;">
+                <?php echo $INFOSTRING; ?>
+				<?php echo $WARNINGSTRING;?>
+                <?php echo $ERRORSTRING; ?>
+                <?php echo $CONTENT; ?>
+            </div>
         </div>
 
         <div class="footer" style="color: black;">
         <div id="social">
-                <ul id="iconlist" style="list-style-type:none;">
-                    <li><a href="https://www.facebook.com/pragyan.nitt/" target="_blank"><i class="fab fa-facebook"></i></a></li>
-                    <li><a href="https://twitter.com/nitt_pragyan" target="_blank"><i class="fab fa-twitter"></i></a></li>
-                    <li><a href="https://www.instagram.com/pragyan_nitt/" target="_blank"><i class="fab fa-instagram"></i></a></li>
-                    <li><a href="https://www.youtube.com/c/pragyannittrichy" target="_blank"><i class="fab fa-youtube"></i></a></li>
-                    <li><a href="https://medium.com/pragyan-blog" target="_blank"><i class="fab fa-medium"></i></a></li>
-                    <li><a href="https://in.linkedin.com/company/pragyan.nitt" target="_blank"><i class="fab fa-linkedin"></i></a></li>
-                </ul>
+                <div id="iconlist" style="list-style-type:none;">
+                    <a href="https://www.facebook.com/pragyan.nitt/" target="_blank"><i class="fab fa-facebook"></i></a>
+                    <a href="https://twitter.com/nitt_pragyan" target="_blank"><i class="fab fa-twitter"></i></a>
+                    <a href="https://www.instagram.com/pragyan_nitt/" target="_blank"><i class="fab fa-instagram"></i></a>
+                    <a href="https://www.youtube.com/c/pragyannittrichy" target="_blank"><i class="fab fa-youtube"></i></a>
+                    <a href="https://medium.com/pragyan-blog" target="_blank"><i class="fab fa-medium"></i></a>
+                    <a href="https://in.linkedin.com/company/pragyan.nitt" target="_blank"><i class="fab fa-linkedin"></i></a>
+                </div>
             </div>
             <p>Made with ♥ by <a href="https://delta.nitt.edu" target="_blank">DeltaForce</a> and <a href="https://behance.net/pragyan_nitt"target="_blank">Design team</a> </p>
         </div>
         
     </div>
 
-    <script>
-        function setResponsiveHeight() {
-            if (window.innerWidth <= 767) {
-                height = document.querySelector("ul.nav.nav-tabs").offsetHeight;
-                document.querySelector("div.tab-content.tabs").style.height = `${window.innerHeight - 200 - 52 - height}px`;
-                
-                document.querySelectorAll("div.tab-pane.fade").forEach(div => {
-                    div.style.height = `${window.innerHeight - 200 - 52 - 20 - height}px`;
-                });
-            }
-        }
-        setResponsiveHeight();
-        setInterval(() => {
-            setResponsiveHeight();
-        }, 2000);
-        window.addEventListener('resize', () => {
-            setResponsiveHeight();
-        });
-        
-    </script>
 </body>
 </html>

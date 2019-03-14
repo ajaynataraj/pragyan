@@ -356,10 +356,10 @@ LOGIN;
         <div class="buttons row">
             <a href="<?php echo $urlRequestRoot?>/events"><div onmouseover="change_desc('EVENTS')" onmouseout="clear_text()" class="icon" ><img src="<?php echo $TEMPLATEBROWSERPATH; ?>/images/Events.svg"></div></a>
             <a href="<?php echo $urlRequestRoot?>/workshops"><div onmouseover="change_desc('WORKSHOPS')" onmouseout="clear_text()" class="icon" ><img src="<?php echo $TEMPLATEBROWSERPATH; ?>/images/Workshops.svg"></div></a>
-            <a href="<?php echo $urlRequestRoot?>/guest_lectures"><div onmouseover="change_desc('GUEST LECTURES')" onmouseout="clear_text()" class="icon" ><img src="<?php echo $TEMPLATEBROWSERPATH; ?>/images/GL.svg"></div></a>
+            <a href="<?php echo $urlRequestRoot?>/gl_and_crossfire"><div onmouseover="change_desc('GL & CROSSFIRE')" onmouseout="clear_text()" class="icon" ><img src="<?php echo $TEMPLATEBROWSERPATH; ?>/images/GL.svg"></div></a>
             <a href="<?php echo $urlRequestRoot?>/infotainment"><div onmouseover="change_desc('INFOTAINMENT')" onmouseout="clear_text()" class="icon" ><img src="<?php echo $TEMPLATEBROWSERPATH; ?>/images/Info.svg"></div></a>
             <a href="<?php echo $urlRequestRoot?>/exhibitions"><div onmouseover="change_desc('EXHIBITIONS')" onmouseout="clear_text()" class="icon" ><img src="<?php echo $TEMPLATEBROWSERPATH; ?>/images/Exhibitions.svg"></div></a>
-            <a href="<?php echo $urlRequestRoot?>/about"><div onmouseover="change_desc('MORE')" onmouseout="clear_text()" class="icon" ><img src="<?php echo $TEMPLATEBROWSERPATH; ?>/images/Plus.svg"></div></a>
+            <a href="<?php echo $urlRequestRoot?>/more"><div onmouseover="change_desc('MORE')" onmouseout="clear_text()" class="icon" ><img src="<?php echo $TEMPLATEBROWSERPATH; ?>/images/Plus.svg"></div></a>
         </div>
         <div id="icondesc" style="text-align: center; font-weight: bold"></div>
     </div>   

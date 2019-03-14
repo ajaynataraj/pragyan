@@ -105,6 +105,12 @@ a:hover, a:active{
         top: 16.5vh !important;
     }
 
+    #borderimg {
+        left: calc(50% - 34vw);
+        width: 70vw;
+        top: 30.5vh !important;
+    }
+
     .clustertitle{
         text-align:center; 
         color: white; 
@@ -125,6 +131,12 @@ a:hover, a:active{
         left: calc(50% - 17.5vw);
         max-width: 35vw;
         top: 18.5vh !important;
+    }
+
+    #borderimg {
+        left: calc(50% - 47vw);
+        width: 94vw !important;
+        top: 13vh !important;
     }
 
     /* img {
@@ -190,6 +202,13 @@ a:hover, a:active{
 
 
 }
+
+@media screen and (max-height: 675px) {
+    #borderimg {
+        top: 20vh !important;
+    }
+}
+
 .tab-pane a {
     color: blue !important;
 }

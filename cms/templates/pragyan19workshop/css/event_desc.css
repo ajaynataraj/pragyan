@@ -105,6 +105,12 @@ a:hover, a:active{
         top: 16.5vh !important;
     }
 
+    #borderimg {
+        left: calc(50% - 34vw);
+        width: 70vw;
+        top: 30.5vh !important;
+    }
+
     .clustertitle{
         text-align:center; 
         color: white; 
@@ -285,6 +291,12 @@ p.clustertitle {
         top: 75px !important;
     }
 
+    #borderimg {
+        left: calc(50% - 47vw);
+        width: 94vw !important;
+        top: 13vh !important;
+    }
+
     p.clustertitle {
         top: 92px !important;
     }
@@ -297,6 +309,12 @@ p.clustertitle {
     ul#mobiletab {
         margin-bottom: 0 !important;
         width: 90vw;
+    }
+}
+
+@media screen and (max-height: 675px) {
+    #borderimg {
+        top: 20vh !important;
     }
 }
 

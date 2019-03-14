@@ -70,7 +70,9 @@ if(!defined('__PRAGYAN_CMS'))
             position: absolute;
         }
 
-
+        #borderimg {
+            position: absolute;
+        }
 
         .logo {
             background-image: url(<?php echo $TEMPLATEBROWSERPATH; ?>/../common/images/logo.png);
@@ -305,6 +307,7 @@ LOGIN;
         </div>
         <div id="container">
             <img id="bgimg" src="<?php echo $TEMPLATEBROWSERPATH; ?>/images/paint5.png">
+            <img id="borderimg" src="<?php echo $TEMPLATEBROWSERPATH; ?>/images/Mainmax Box.png">
             <?php echo $CONTENT; ?>
         </div>
 
